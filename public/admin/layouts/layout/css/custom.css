@@ -1,0 +1,205 @@
+/* here you can put your own css to customize and override the theme */
+.hide-section{
+  display: none;
+}
+.no-border{
+  border:0px !important; 
+}
+.no-margin{
+  margin: 0px !important;
+}
+.no-padding{
+  padding: 0px !important;
+}
+.full-width{
+  width: 100%;
+}
+.full-height{
+  height: 100%;
+}
+.addresses{                                                 /*content*/
+  position: relative;
+  padding: 10px 5px 0px 0px;
+}
+.from-address,
+.to-address{
+  position: relative;
+}
+.out .from-address i,
+.out .to-address i{
+ 	color: #d64635; 
+}
+.in .from-address i,
+.in .to-address i{
+ 	color: #1bbc9b; 
+}
+.out span.date{
+	float: left;
+}
+.in span.date{
+	float: right;
+}
+p.job-address{
+  margin-bottom: 5px;
+  position:relative;
+}
+p.job-address span{
+  font-weight: bold;
+  opacity: 0.3;
+  font-size:12px;
+}
+/*Real Time Mapping*/
+
+/*Dashboard*/
+.payment-requests{}
+.payment-requests ul li{
+  font-size: 12px;
+}
+#proceedForm{
+  display: none;
+}
+.payment-request-head{
+  position: relative;
+}
+.payment-request-head .requster-info{
+  margin: 8px 0px;
+} 
+span.requster-status{
+  font-size: 12px;
+}
+span.request-time{
+  display: block;
+  font-size:10px;
+}
+/*Dashboard*/
+
+/*User Details*/
+.user-bookings .mt-comment{
+  border-bottom: 1px solid #eee;
+}
+.user-bookings .addresses{                                                 /*content*/
+  position: relative
+}
+.user-bookings .from-address,
+.user-bookings .to-address{
+  position: relative;
+  padding: 10px 0px;
+}
+.user-bookings .from-address i,
+.user-bookings .to-address i{
+  position: absolute;
+  top:32px;
+  left: 0px;
+  font-size: 20px;
+  color: #d64635; 
+}
+.user-bookings p.job-address{
+  padding-left: 26px;
+  position:relative;
+}
+.user-bookings p.job-address span{
+  font-weight: bold;
+  color: #000;
+  opacity: 0.5;
+  font-size:16px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 5px;
+}
+.user-bookings ul li a{
+  color: #d64635 !important; 
+}
+.user-bookings .v-seprator{
+  border-left:2px dashed #ccc;
+}
+@media only screen and (max-width: 1200px) {
+  .user-bookings .v-seprator{
+    border-left: 0px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .user-bookings .v-seprator{
+    border-left:2px dashed #ccc;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .user-bookings .v-seprator{
+    border-left: 0px;
+  }
+}
+.mt-comment-details span.rating-star{
+  color: #ed1c24;
+}
+.wallet-history label.inline-lbl{
+  font-weight: bold;
+  color: #000;
+  opacity: 0.5;
+  font-size:14px;
+  text-transform: uppercase;
+  display: inline;
+  margin-bottom: 5px;
+}
+.wallet-history .from-address i,
+.wallet-history .to-address i{
+  position: absolute;
+  top:3px;
+  left: 0px;
+  font-size: 18px;
+  color: #d64635; 
+}
+.wallet-history .from-address,
+.wallet-history .to-address{
+  padding: 3px 0px 3px 10px;
+}
+.wallet-history p.job-address{
+  font-size: 12px;
+}
+.wallet-history .mt-comment-img span{
+  font-size: 34px;
+}
+.trn_type-amt{
+  font-size: 12px;
+  line-height: 24px;
+}
+.trn_type-amt span{
+  font-size: 20px;
+  line-height: 30px;
+  display: block;
+  font-weight: bold;
+}
+/*User Details*/
+
+/*Driver Details*/
+.file-upload label span{
+  font-size: 10px;
+}
+span.payment-details-date-range{
+  display: block;
+  line-height: 24px;
+  font-size: 12px;
+}
+/*Driver Details*/
+
+/*Booking Details*/
+.map-location-list{
+  padding-left: 0px;
+}
+@media only screen and (max-width: 992px) {
+  .map-location-list{
+    padding-left: 15px;
+  } 
+}
+/*Booking Details*/
+
+/*Activity Stream (SLIDING)*/
+.slide-activity-stream{
+  font-size: 12px !important
+}
+.slide-activity-stream i{
+  color: #d64635;
+  font-size: 16px;
+}
+.slide-activity-stream p.job-address{
+  line-height: 12px;
+}
+/*Activity Stream (SLIDING)*/

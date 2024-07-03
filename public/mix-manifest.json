@@ -1,0 +1,14 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/js/admin.js": "/js/admin.js",
+    "/css/app.css": "/css/app.css",
+    "/css/admin-overrides.css": "/css/admin-overrides.css",
+    "/css/tinyMCE.css": "/css/tinyMCE.css",
+    "/css/payeezy-forms.css": "/css/payeezy-forms.css",
+    "/css/print.css": "/css/print.css",
+    "/css/ajax-loader.gif": "/css/ajax-loader.gif",
+    "/css/fonts/slick.eot": "/css/fonts/slick.eot",
+    "/css/fonts/slick.svg": "/css/fonts/slick.svg",
+    "/css/fonts/slick.ttf": "/css/fonts/slick.ttf",
+    "/css/fonts/slick.woff": "/css/fonts/slick.woff"
+}
