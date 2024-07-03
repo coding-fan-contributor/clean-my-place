@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'europe-west1-docker.pkg.dev/home-cleaning-373216/cleanmyplace-artifact/clean-my-place:$COMMIT_SHA']
+  args: ['build', '-t', 'europe-west1-docker.pkg.dev/home-cleaning-373216/cleanmyplace-artifact/clean-my-place', '.']
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'europe-west1-docker.pkg.dev/home-cleaning-373216/cleanmyplace-artifact/clean-my-place']
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
