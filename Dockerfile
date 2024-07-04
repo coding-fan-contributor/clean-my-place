@@ -1,7 +1,7 @@
-FROM php:8.2.12
+FROM php:8.2-cli
 RUN apt-get update -y && apt-get install -y openssl zip unzip git
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-RUN apt-get update && docker-php-ext-install mbstring
+# RUN docker-php-ext-install -j mbstring
 WORKDIR /app
 COPY . /app
 RUN composer update -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist --ignore-platform-reqs
