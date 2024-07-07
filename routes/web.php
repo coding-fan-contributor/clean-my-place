@@ -16,30 +16,28 @@ use App\Http\Controllers\AppPaymentController;
 |
 */
 
-Route::get('/', function () {
-    return redirect('/admin/login');
-});
-
-Route::get('/admin', function () {
-    return redirect('/admin/login');
-});
-
 // ================ web
 Route::get('/tnc', [WebController::class,'tnc']);
+Route::get('/terms', [WebController::class,'tnc']);
 Route::get('/cancellation-policy', [WebController::class,'cancellation']);
 
 // ====== Public Auth | does not require csrf
 Route::group(['middleware' => ['web']], function () {
-    Route::get('/admin/login', function(){
+    Route::get('/', function () {
+        redirect('admin/login');
+    });
+    
+    Route::get('/admin', function () {
+        redirect('admin/login');
+    });
+    
+    Route::get('/admin/login', function() {
         return view('admin.login');
     });
-    Route::post('login_admin', [PublicAuthController::class,'login_admin']);
-    Route::post('login_user', [PublicAuthController::class,'login_user']);
+    Route::post('/login_admin', [PublicAuthController::class,'login_admin']);
+    Route::post('/login_user', [PublicAuthController::class,'login_user']);
 
-});
-
-// ====== Admin
-Route::group(['middleware' => ['web']], function () {
+    
     Route::get('/admin/dashboard', [AdminController::class,'index']);
     Route::get('/admin/logout', [AdminController::class,'logout_admin']);
     Route::get('/admin/profile', [AdminController::class,'profile']);
